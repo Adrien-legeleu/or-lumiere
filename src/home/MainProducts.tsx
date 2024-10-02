@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { StickyScroll } from "@/components/acerternity/sticky-scroll-reveal";
 import { Card, Carousel } from "@/components/acerternity/apple-cards-carousel";
+import { WhyUs } from "./MainProducts/WhyUs";
 
 const content = [
   {
@@ -11,7 +12,7 @@ const content = [
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa voluptatem beatae laborum molestiae, dolor sequi, autem tenetur   exercitationem nisi quos voluptatum voluptas mollitia distinctio  quisquam dolorum rem aut ratione. Aspernatur, aliquam perferendis?",
     content: (
-      <div className="">
+      <div>
         <AppleCardsCarouselDemo />
       </div>
     ),
@@ -21,8 +22,8 @@ const content = [
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa voluptatem beatae laborum molestiae, dolor sequi, autem tenetur   exercitationem nisi quos voluptatum voluptas mollitia distinctio  quisquam dolorum rem aut ratione. Aspernatur, aliquam perferendis?",
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
-        idsoioidodos
+      <div>
+        <WhyUs />
       </div>
     ),
   },
