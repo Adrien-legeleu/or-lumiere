@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 
-import Image from "next/image";
 import { StickyScroll } from "@/components/acerternity/sticky-scroll-reveal";
 import { Card, Carousel } from "@/components/acerternity/apple-cards-carousel";
+import { Collection } from "./MainProducts/Collection";
 import { WhyUs } from "./MainProducts/WhyUs";
 
 const content = [
@@ -32,8 +32,8 @@ const content = [
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa voluptatem beatae laborum molestiae, dolor sequi, autem tenetur   exercitationem nisi quos voluptatum voluptas mollitia distinctio  quisquam dolorum rem aut ratione. Aspernatur, aliquam perferendis?",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        Version control
+      <div>
+        <Collection />
       </div>
     ),
   },

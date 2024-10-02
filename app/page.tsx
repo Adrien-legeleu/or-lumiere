@@ -1,5 +1,5 @@
 import { Header } from "@/src/features/Header";
-import { Description, Landing, MainProducts } from "@/src/home";
+import { Description, Landing, MainProducts, Notice } from "@/src/home";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <Landing />
       <Description />
       <MainProducts />
+      <Notice />
     </div>
   );
 }
