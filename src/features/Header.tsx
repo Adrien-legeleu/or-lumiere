@@ -11,7 +11,7 @@ import { MenuItem } from "../../components/acerternity/navbar-menu";
 
 export const Header = () => {
   return (
-    <div className="w-full py-4 px-8 flex items-center justify-between">
+    <div className="w-full absolute top-0 left-0 py-4 px-8 flex items-center justify-between">
       <h1>Or&Lumière</h1>
       <div>
         <Navbar className="top-2" />
