@@ -8,6 +8,7 @@ import { ModeToggle } from "@/components/ModeToggle";
 import { cn } from "@/lib/utils";
 import React, { useState } from "react";
 import { MenuItem } from "../../components/acerternity/navbar-menu";
+import Link from "next/link";
 
 export const Header = () => {
   return (
@@ -32,34 +33,35 @@ function Navbar({ className }: { className?: string }) {
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Home">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/presentation">Présentation</HoveredLink>
-            <HoveredLink href="/main-products">Produits phares</HoveredLink>
-            <HoveredLink href="/notice">Ce qu'ils disent sur nous</HoveredLink>
+            <HoveredLink href="#presentation">Présentation</HoveredLink>
+            <HoveredLink href="#main-products">Produits phares</HoveredLink>
+            <HoveredLink href="#notice">Ce qu'ils disent sur nous</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Collections">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+            <Link href="/collections">idoisdoiodioidos</Link>
             <ProductItem
               title="Collier"
-              href="https://algochurn.com"
+              href="/collections"
               src="https://assets.aceternity.com/demos/algochurn.webp"
               description="Prepare for tech interviews like never before."
             />
             <ProductItem
               title="Bagues"
-              href="https://tailwindmasterkit.com"
+              href="/collections"
               src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
               description="Production ready Tailwind css components for your next project"
             />
             <ProductItem
               title="Bracelets"
-              href="https://gomoonbeam.com"
+              href="/collections"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
               description="Never write from scratch again. Go from idea to blog in minutes."
             />
             <ProductItem
               title="Rogue"
-              href="Montres"
+              href="/collections"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />

@@ -38,25 +38,30 @@ const ReviewCard = ({
 
 export function Notice() {
   return (
-    <div className="relative flex h-screen mt-10 w-full flex-row items-center justify-center overflow-hidden rounded-lg bg-background md:shadow-xl px-4">
-      <Marquee pauseOnHover vertical className="[--duration:50s]">
-        {secondRow.map((review) => (
-          <ReviewCard key={review.username} {...review} />
-        ))}
-      </Marquee>
-      <Marquee reverse pauseOnHover vertical className="[--duration:40s]">
-        {firstRow.map((review) => (
-          <ReviewCard key={review.username} {...review} />
-        ))}
-      </Marquee>
-      <Marquee pauseOnHover vertical className="[--duration:50s]">
-        {thirdRow.map((review) => (
-          <ReviewCard key={review.username} {...review} />
-        ))}
-      </Marquee>
+    <div className="relative flex h-screen mt-32 w-full flex-col  rounded-lg bg-background px-4">
+      <h2 className="text-center font-medium tracking-wider text-4xl mb-16">
+        Ce qu'ils disent sur nous
+      </h2>
+      <div className="flex flex-row items-center justify-center overflow-hidden">
+        <Marquee pauseOnHover vertical className="[--duration:50s]">
+          {secondRow.map((review) => (
+            <ReviewCard key={review.username} {...review} />
+          ))}
+        </Marquee>
+        <Marquee reverse pauseOnHover vertical className="[--duration:40s]">
+          {firstRow.map((review) => (
+            <ReviewCard key={review.username} {...review} />
+          ))}
+        </Marquee>
+        <Marquee pauseOnHover vertical className="[--duration:50s]">
+          {thirdRow.map((review) => (
+            <ReviewCard key={review.username} {...review} />
+          ))}
+        </Marquee>
 
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-white dark:from-background"></div>
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-white dark:from-background"></div>
+        <div className="pointer-events-none absolute inset-x-0 top-10 h-1/3 bg-gradient-to-b from-white dark:from-background"></div>
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-white dark:from-background"></div>
+      </div>
     </div>
   );
 }
