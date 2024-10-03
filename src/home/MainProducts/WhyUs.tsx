@@ -4,7 +4,10 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { BentoGrid, BentoGridItem } from "@/components/acerternity/bento-grid";
+import {
+  BentoGrid,
+  BentoGridItem,
+} from "@/src/components/acerternity/bento-grid";
 
 export function WhyUs() {
   return (

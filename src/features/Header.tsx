@@ -3,11 +3,11 @@ import {
   HoveredLink,
   Menu,
   ProductItem,
-} from "@/components/acerternity/navbar-menu";
-import { ModeToggle } from "@/components/ModeToggle";
+} from "@/src/components/acerternity/navbar-menu";
+import { ModeToggle } from "@/src/components/ModeToggle";
 import { cn } from "@/lib/utils";
 import React, { useState } from "react";
-import { MenuItem } from "../../components/acerternity/navbar-menu";
+import { MenuItem } from "../components/acerternity/navbar-menu";
 import Link from "next/link";
 
 export const Header = () => {
@@ -44,25 +44,25 @@ function Navbar({ className }: { className?: string }) {
             <ProductItem
               title="Collier"
               href="/collections"
-              src="https://assets.aceternity.com/demos/algochurn.webp"
+              src="/images/WhiteBg.jpg"
               description="Prepare for tech interviews like never before."
             />
             <ProductItem
               title="Bagues"
               href="/collections"
-              src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
+              src="/images/WhiteBg.jpg"
               description="Production ready Tailwind css components for your next project"
             />
             <ProductItem
               title="Bracelets"
               href="/collections"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
+              src="/images/WhiteBg.jpg"
               description="Never write from scratch again. Go from idea to blog in minutes."
             />
             <ProductItem
               title="Rogue"
               href="/collections"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              src="/images/WhiteBg.jpg"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
           </div>

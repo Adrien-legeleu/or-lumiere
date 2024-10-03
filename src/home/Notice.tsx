@@ -1,4 +1,4 @@
-import Marquee from "@/components/ui/marquee";
+import Marquee from "@/src/components/ui/marquee";
 import { cn } from "@/lib/utils";
 
 const ReviewCard = ({

@@ -1,8 +1,11 @@
 "use client";
 import React from "react";
 
-import { StickyScroll } from "@/components/acerternity/sticky-scroll-reveal";
-import { Card, Carousel } from "@/components/acerternity/apple-cards-carousel";
+import { StickyScroll } from "@/src/components/acerternity/sticky-scroll-reveal";
+import {
+  Card,
+  Carousel,
+} from "@/src/components/acerternity/apple-cards-carousel";
 import { Collection } from "./MainProducts/Collection";
 import { WhyUs } from "./MainProducts/WhyUs";
 

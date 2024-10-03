@@ -1,5 +1,5 @@
 "use client";
-import { WobbleCard } from "@/components/acerternity/wobble-card";
+import { WobbleCard } from "@/src/components/acerternity/wobble-card";
 import Image from "next/image";
 import React from "react";
 

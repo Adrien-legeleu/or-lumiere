@@ -1,6 +1,6 @@
 // app/collections/page.tsx
 
-export default function CollectionsPage() {
+export default function collections() {
   return (
     <div>
       <h1>Nos collections</h1>
